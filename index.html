@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why are you here?</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .message-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 32px;
+        color: #333333;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #666666;
+    }
+</style>
+<script>
+    // Function to close the window after a delay
+    function closeWindow() {
+        setTimeout(function() {
+            window.close();
+        }, 2000); // Change delay time (in milliseconds) here, currently set to 2 seconds
+    }
+
+    // Call the closeWindow function when the page loads
+    window.onload = closeWindow;
+</script>
+</head>
+<body>
+    <div class="message-container">
+        <h1>Why are you here?</h1>
+        <p>We're sorry, but this page will close automatically in a few seconds.</p>
+    </div>
+</body>
+</html>
